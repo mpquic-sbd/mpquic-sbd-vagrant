@@ -1,6 +1,6 @@
 
 ### 1. Requirements.
-You need to install Vagrant and VirtualBox on your host system.  
+You need to install [Vagrant](https://developer.hashicorp.com/vagrant/install) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads) on your host system.  
 
 ### 2. Install GO, MPQUIC-SBD, Mininet, etc.
 Run `sh setup.sh`.  
