@@ -1,0 +1,18 @@
+ENV['VAGRANT_DEFAULT_PROVIDER'] = 'virtualbox'
+
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "ubuntu/bionic64"
+  config.ssh.forward_agent = true
+  config.ssh.forward_x11 = true
+
+  config.vm.synced_folder "../Workstation", "/Workstation"
+
+  config.vm.provider "virtualbox" do |vb|
+    # vb.gui = true
+    vb.memory = "4000"  # in MB
+    vb.cpus = "4"
+  end
+
+  config.vm.provision :shell, path: "install.sh", privileged: false
+end
