@@ -5,7 +5,8 @@ wget https://golang.org/dl/go1.12.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.12.linux-amd64.tar.gz
 echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile && source ~/.profile
 
-wget https://traffic.comics.unina.it/software/ITG/codice/D-ITG-2.8.1-r1023-src.zip
+wget https://traffic.comics.unina.it/software/ITG/codice/D-ITG-2.8.1-r1023-src.zip 
+unzip D-ITG-2.8.1-r1023-src.zip 
 cd D-ITG-2.8.1-r1023/src 
 make 
 sudo make install PREFIX=/usr/local 
