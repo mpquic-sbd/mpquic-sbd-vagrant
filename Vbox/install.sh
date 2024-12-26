@@ -11,7 +11,7 @@ git clone https://github.com/mininet/mininet.git
 echo 'net.ipv4.ip_forward=1' | sudo tee -a /etc/sysctl.conf
 echo 'net.ipv6.conf.all.forwarding=1' | sudo tee -a /etc/sysctl.conf
 
-cd /Workstation
+cd /Workspace
 git clone https://github.com/thomaswpp/mpquic-sbd.git
 cd mpquic-sbd
 ./build.sh
