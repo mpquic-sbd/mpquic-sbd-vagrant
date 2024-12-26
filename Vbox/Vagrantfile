@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
   config.ssh.forward_agent = true
   config.ssh.forward_x11 = true
 
-  config.vm.synced_folder "../Workstation", "/Workstation"
+  config.vm.synced_folder "../Workspace", "/Workspace"
 
   config.vm.provider "virtualbox" do |vb|
     # vb.gui = true
