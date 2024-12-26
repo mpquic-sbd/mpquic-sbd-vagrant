@@ -11,7 +11,8 @@ make
 sudo make install PREFIX=/usr/local 
 
 pip install mininet 
-sudo apt-get install mininet
+git clone https://github.com/mininet/mininet.git 
+./mininet/util/install.sh
 
 echo 'net.ipv4.ip_forward=1' | sudo tee -a /etc/sysctl.conf
 echo 'net.ipv6.conf.all.forwarding=1' | sudo tee -a /etc/sysctl.conf
